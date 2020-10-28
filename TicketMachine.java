@@ -9,10 +9,12 @@
  * @author David J. Barnes and Michael Kolling
  * @version 2008.03.30
  */
-public class TicketMachine
+   class TicketMachine
 {
-    // The price of a ticket from this machine.
-    private Integer price;
+    
+       // The price of a ticket from this machine.
+    private Integer   price;
+//private Integer status;
     // The amount of money entered by a customer so far.
     private Integer balance;
     // The total amount of money collected by this machine.
@@ -41,6 +43,10 @@ public class TicketMachine
         return price;
     }
     
+    public Integer getTotal()
+    {
+        return total;
+    }
     /**
      * Return ticketNumber.
      * (Increments on each print.)
@@ -78,7 +84,18 @@ public class TicketMachine
         return ticketNumber;
     }
     
+    
+     public void prompt(){
+        System.out.println("Please insert the correct amount of money");
+    }
 
+    
+    public void showPrice(){
+        
+         System.out.println("The price of a ticket is " + price + " cents.");
+        System.out.println("# " + "price" + " cents.");
+      System.out.println("# price cents.");
+    }
     /**
      * Print a ticket.
      * Update the total collected and
