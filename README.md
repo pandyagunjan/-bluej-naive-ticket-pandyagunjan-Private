@@ -90,7 +90,7 @@ in the outer wrapper of a class?
 * What do you think is the type of each of the following fields?
 
 ```java
-private int count; [Answer] : Integer data type
+private int count; [Answer] : int data type
 private Student representative; [Answer] : Instance of class 'Student'
 private Server host; [Answer] : Instance of class 'Server'
 ```
